@@ -59,3 +59,11 @@ body {
   color: rgba(0,0,0,1);
   border-bottom-color: #fff;
 }
+
+.p-0 {
+  padding: 6px, 6px;
+}
+
+.maxCharacters {
+  max-width: 1ch
+}
