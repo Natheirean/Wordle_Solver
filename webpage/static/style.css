@@ -27,10 +27,11 @@
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-size: 25px;
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 80em;
 }
 
 
@@ -60,8 +61,8 @@ body {
   border-bottom-color: #fff;
 }
 
-td {
-width: 1;
-maxlength: 1;
-pattern: "[A-Za-z]";
+/* classes created for project 4 */
+.center{
+  margin-left: auto;
+  margin-right: auto;
 }

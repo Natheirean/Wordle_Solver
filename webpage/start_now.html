@@ -32,118 +32,82 @@
 <!-- separator -->
   <div class="b-example-divider"></div>
 
-<!-- container for 2 columns -->
+<!-- container for 3 columns -->
 <div class="row">
 
 <!-- column 1: where the graph stuff goes -->
-  <div class="col-sm-8">
+  <div class="col-sm-4">
     
   </div>
 
-<!-- column 2: where the wordle grid goes -->
+<!-- column 2: user input: one input box per letter -->
 
-
-
-
-  <div class="col-sm-4">
+<div class="col-sm-4">
 <table>
-  <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>  
-  </tr>
-    <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>  
-  </tr>
-    <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>  
-  </tr>
-    <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>  
-  </tr>
-    <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>  
-  </tr>
-    <tr>
-    <td>
-    <input type="text" name="word" size="20" maxlength="5" pattern="[A-Za-z]"/>
-    </td>
-  </tr>
-<input type="submit" value="submit">  
-</table>
-<!-- tr>
-  <td></td>
-  <td></td>
-  <td><input type="text" name="word" size="2" maxlength="5" pattern="[A-Za-z]"/></td>
-  <td><input type="text" name="word" size="2" maxlength="5" pattern="[A-Za-z]"/></td>
-  <td><input type="text" name="word" size="2" maxlength="5" pattern="[A-Za-z]"/></td>      
+<tr height="100">
+  <td><input type="text" name="L1" size="10" maxlength="1" pattern="[A-Za-z]"/></td>
+  <td><input type="text" name="L2" size="10" maxlength="1" pattern="[A-Za-z]"/></td>
+  <td><input type="text" name="L3" size="10" maxlength="1" pattern="[A-Za-z]"/></td>
+  <td><input type="text" name="L4" size="10" maxlength="1" pattern="[A-Za-z]"/></td>
+  <td><input type="text" name="L5" size="10" maxlength="1" pattern="[A-Za-z]"/></td>      
       <input type="hidden" name="cid" value="11" />
       <input type="hidden" name="uid" value="12" />
   </td>
-</tr> -->
+</tr>
+<tr height="100">
+  <td>
+    <input type="radio" name="letter_position" value="letter_correct">
+    <label for="letter_correct">Green</label><br>
+    <input type="radio" name="letter_position" value="letter_misplaced">
+    <label for="letter_misplaced">Yellow</label><br>
+    <input type="radio" name="letter_position" value="letter_missing">
+    <label for="letter_missing">Gray</label><br>
+  </td>
+    <td>
+    <input type="radio" name="letter_position" value="letter_correct">
+    <label for="letter_correct">Green</label><br>
+    <input type="radio" name="letter_position" value="letter_misplaced">
+    <label for="letter_misplaced">Yellow</label><br>
+    <input type="radio" name="letter_position" value="letter_missing">
+    <label for="letter_missing">Gray</label><br>
+  </td>
+    <td>
+    <input type="radio" name="letter_position" value="letter_correct">
+    <label for="letter_correct">Green</label><br>
+    <input type="radio" name="letter_position" value="letter_misplaced">
+    <label for="letter_misplaced">Yellow</label><br>
+    <input type="radio" name="letter_position" value="letter_missing">
+    <label for="letter_missing">Gray</label><br>
+  </td>
+    <td>
+    <input type="radio" name="letter_position" value="letter_correct">
+    <label for="letter_correct">Green</label><br>
+    <input type="radio" name="letter_position" value="letter_misplaced">
+    <label for="letter_misplaced">Yellow</label><br>
+    <input type="radio" name="letter_position" value="letter_missing">
+    <label for="letter_missing">Gray</label><br>
+  </td>
+    <td>
+    <input type="radio" name="letter_position" value="letter_correct">
+    <label for="letter_correct">Green</label><br>
+    <input type="radio" name="letter_position" value="letter_misplaced">
+    <label for="letter_misplaced">Yellow</label><br>
+    <input type="radio" name="letter_position" value="letter_missing">
+    <label for="letter_missing">Gray</label><br>
+  </td>
+</tr>
+<tr height="20">
+  
+</tr>
+</table>
+<input type="submit" value="submit">  
 </div>
 
-    <!-- row 1 -->
-    <!-- <form>
-    <div class="row">
-      <div class=col-sm-2>
-        <input type="text" name="first letter" width="6px" height="6px">
-      </div>
-      <div class=col-sm-2>t
-      </div>
-      <div class=col-sm-2>t
-      </div>      
-      <div class=col-sm-2>t
-      </div>
-      <div class=col-sm-2>t
-      </div>
-      <div class=col-sm-2>t
-      </div>      
-    </div>
-    </form> -->
-
-<!-- Wordle Grid -->
-<!-- <div class="container">
-  <div class="input-group input-group-lg">
-  <form>
-  <div class="row flex-grow-1 bg justify-content-center">
-    <div class="col-1 p-0">
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-1 p-0">
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-1 p-0">
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-1 p-0">
-      <input type="text" class="form-control">
-    </div>
-     <div class="col-1 p-0">
-      <input type="text" class="form-control">
-    </div>
-  </div>
-</form> -->
-  <!-- <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-  </div> -->
- <!--  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"> -->
-<!-- </div>
-</div>  -->
-
-
-
-
-<!-- Chart -->
-<!--     <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+<!-- column 3: for formatting -->
+<div class="col-sm-4">
+  
+</div>
+</div>
 
 <!-- separator -->
   <div class="b-example-divider"></div>
