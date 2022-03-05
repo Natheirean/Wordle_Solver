@@ -60,10 +60,8 @@ body {
   border-bottom-color: #fff;
 }
 
-.p-0 {
-  padding: 6px, 6px;
-}
-
-.maxCharacters {
-  max-width: 1ch
+td {
+width: 1;
+maxlength: 1;
+pattern: "[A-Za-z]";
 }
