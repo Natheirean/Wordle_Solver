@@ -1,126 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Wordle App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link href="/static/style.css" rel="stylesheet">
-  </head>
-  <body>
+  <title>Wordle App</title>
 
-    <!-- Navigation Bar -->
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Get Started</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-      	<a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" aria-current="page" href="start_now.html">Get Started</a>
-        <a class="nav-link" href="learn_more.html">Learn More</a>
-        <a class="nav-link" href="about_us.html">About Us</a>
-      </nav>
-    </div>
-  </header>
-</div>
+  <link href="/static/style.css" rel="stylesheet">
+</head>
 
-<!-- separator -->
-  <div class="b-example-divider"></div>
+<body>
 
-<!-- container for 3 columns -->
-<div class="row">
-
-<!-- column 1: where the graph stuff goes -->
-  <div class="col-sm-4">
-    
+  <!-- Navigation Bar -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Get Started</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="start_now.html">Get Started</a>
+          <a class="nav-link" href="learn_more.html">Learn More</a>
+          <a class="nav-link" href="about_us.html">About Us</a>
+        </nav>
+      </div>
+    </header>
   </div>
 
-<!-- column 2: user input: one input box per letter -->
+  <!-- separator -->
+  <div class="b-example-divider"></div>
 
-<div class="col-sm-8">
-<table>
-<tr height="100">
-  <td><input type="text" name="L1" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid"/></td>
-  <td><input type="text" name="L2" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid"/></td>
-  <td><input type="text" name="L3" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid"/></td>
-  <td><input type="text" name="L4" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid"/></td>
-  <td><input type="text" name="L5" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid"/></td>      
-      <!-- <input type="hidden" name="cid" value="11" /> -->
-      <!-- <input type="hidden" name="uid" value="12" /> -->
-  </td>
-</tr>
-<tr height="100">
-  <td>
-    <input type="radio" name="letter_position" value="letter_correct">
-    <label for="letter_correct">Green</label><br>
-    <input type="radio" name="letter_position" value="letter_misplaced">
-    <label for="letter_misplaced">Yellow</label><br>
-    <input type="radio" name="letter_position" value="letter_missing">
-    <label for="letter_missing">Gray</label><br>
-  </td>
-    <td>
-    <input type="radio" name="letter_position" value="letter_correct">
-    <label for="letter_correct">Green</label><br>
-    <input type="radio" name="letter_position" value="letter_misplaced">
-    <label for="letter_misplaced">Yellow</label><br>
-    <input type="radio" name="letter_position" value="letter_missing">
-    <label for="letter_missing">Gray</label><br>
-  </td>
-    <td>
-    <input type="radio" name="letter_position" value="letter_correct">
-    <label for="letter_correct">Green</label><br>
-    <input type="radio" name="letter_position" value="letter_misplaced">
-    <label for="letter_misplaced">Yellow</label><br>
-    <input type="radio" name="letter_position" value="letter_missing">
-    <label for="letter_missing">Gray</label><br>
-  </td>
-    <td>
-    <input type="radio" name="letter_position" value="letter_correct">
-    <label for="letter_correct">Green</label><br>
-    <input type="radio" name="letter_position" value="letter_misplaced">
-    <label for="letter_misplaced">Yellow</label><br>
-    <input type="radio" name="letter_position" value="letter_missing">
-    <label for="letter_missing">Gray</label><br>
-  </td>
-    <td>
-    <input type="radio" name="letter_position" value="letter_correct">
-    <label for="letter_correct">Green</label><br>
-    <input type="radio" name="letter_position" value="letter_misplaced">
-    <label for="letter_misplaced">Yellow</label><br>
-    <input type="radio" name="letter_position" value="letter_missing">
-    <label for="letter_missing">Gray</label><br>
-  </td>
-</tr>
-<tr height="20">
-  
-</tr>
-</table>
-<input type="submit" value="Submit">
-<button type="button" onclick="clear_fields()">Reset</button>  
-</div>
+  <!-- container for 3 columns -->
+  <div class="row">
 
-</div>
+    <!-- column 1: where the graph stuff goes -->
+    <div class="col-sm-4">
 
-<!-- separator -->
+    </div>
+
+    <!-- column 2: user input: one input box per letter -->
+
+    <div class="col-sm-8">
+      <table>
+        <tr height="100">
+          <td><input id="L1-input" type="text" name="L1" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid" />
+          </td>
+          <td><input id='L2-input' type="text" name="L2" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid" />
+          </td>
+          <td><input id='L3-input' type="text" name="L3" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid" />
+          </td>
+          <td><input id='L4-input' type="text" name="L4" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid" />
+          </td>
+          <td><input id='L5-input' type="text" name="L5" size="10" maxlength="1" pattern="[A-Za-z]" id="wordle-grid" />
+          </td>
+          <!-- <input type="hidden" name="cid" value="11" /> -->
+          <!-- <input type="hidden" name="uid" value="12" /> -->
+          </td>
+        </tr>
+        <tr height="100">
+          <td>
+            <input type="radio" name="letter_position" value="letter_correct">
+            <label for="letter_correct">Green</label><br>
+            <input type="radio" name="letter_position" value="letter_misplaced">
+            <label for="letter_misplaced">Yellow</label><br>
+            <input type="radio" name="letter_position" value="letter_missing">
+            <label for="letter_missing">Gray</label><br>
+          </td>
+          <td>
+            <input type="radio" name="letter_position" value="letter_correct">
+            <label for="letter_correct">Green</label><br>
+            <input type="radio" name="letter_position" value="letter_misplaced">
+            <label for="letter_misplaced">Yellow</label><br>
+            <input type="radio" name="letter_position" value="letter_missing">
+            <label for="letter_missing">Gray</label><br>
+          </td>
+          <td>
+            <input type="radio" name="letter_position" value="letter_correct">
+            <label for="letter_correct">Green</label><br>
+            <input type="radio" name="letter_position" value="letter_misplaced">
+            <label for="letter_misplaced">Yellow</label><br>
+            <input type="radio" name="letter_position" value="letter_missing">
+            <label for="letter_missing">Gray</label><br>
+          </td>
+          <td>
+            <input type="radio" name="letter_position" value="letter_correct">
+            <label for="letter_correct">Green</label><br>
+            <input type="radio" name="letter_position" value="letter_misplaced">
+            <label for="letter_misplaced">Yellow</label><br>
+            <input type="radio" name="letter_position" value="letter_missing">
+            <label for="letter_missing">Gray</label><br>
+          </td>
+          <td>
+            <input type="radio" name="letter_position" value="letter_correct">
+            <label for="letter_correct">Green</label><br>
+            <input type="radio" name="letter_position" value="letter_misplaced">
+            <label for="letter_misplaced">Yellow</label><br>
+            <input type="radio" name="letter_position" value="letter_missing">
+            <label for="letter_missing">Gray</label><br>
+          </td>
+        </tr>
+        <tr height="20">
+
+        </tr>
+      </table>
+      <input type="submit" value="Submit">
+      <button type="button" onclick="clear_fields()">Reset</button>
+    </div>
+
+  </div>
+
+  <!-- separator -->
   <div class="b-example-divider"></div>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="JS/app.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="JS/app.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
