@@ -64,43 +64,43 @@
         </tr>
         <tr height="100">
           <td>
-            <input type="radio" name="letter_position" value="letter_correct">
+            <input type="radio" name="letter_position_1" value="correct">
             <label for="letter_correct">Green</label><br>
-            <input type="radio" name="letter_position" value="letter_misplaced">
+            <input type="radio" name="letter_position_1" value="misplaced">
             <label for="letter_misplaced">Yellow</label><br>
-            <input type="radio" name="letter_position" value="letter_missing">
+            <input type="radio" name="letter_position_1" value="missing">
             <label for="letter_missing">Gray</label><br>
           </td>
           <td>
-            <input type="radio" name="letter_position" value="letter_correct">
+            <input type="radio" name="letter_position_2" value="correct">
             <label for="letter_correct">Green</label><br>
-            <input type="radio" name="letter_position" value="letter_misplaced">
+            <input type="radio" name="letter_position_2" value="misplaced">
             <label for="letter_misplaced">Yellow</label><br>
-            <input type="radio" name="letter_position" value="letter_missing">
+            <input type="radio" name="letter_position_2" value="missing">
             <label for="letter_missing">Gray</label><br>
           </td>
           <td>
-            <input type="radio" name="letter_position" value="letter_correct">
+            <input type="radio" name="letter_position_3" value="correct">
             <label for="letter_correct">Green</label><br>
-            <input type="radio" name="letter_position" value="letter_misplaced">
+            <input type="radio" name="letter_position_3" value="misplaced">
             <label for="letter_misplaced">Yellow</label><br>
-            <input type="radio" name="letter_position" value="letter_missing">
+            <input type="radio" name="letter_position_3" value="missing">
             <label for="letter_missing">Gray</label><br>
           </td>
           <td>
-            <input type="radio" name="letter_position" value="letter_correct">
+            <input type="radio" name="letter_position_4" value="correct">
             <label for="letter_correct">Green</label><br>
-            <input type="radio" name="letter_position" value="letter_misplaced">
+            <input type="radio" name="letter_position_4" value="misplaced">
             <label for="letter_misplaced">Yellow</label><br>
-            <input type="radio" name="letter_position" value="letter_missing">
+            <input type="radio" name="letter_position_4" value="missing">
             <label for="letter_missing">Gray</label><br>
           </td>
           <td>
-            <input type="radio" name="letter_position" value="letter_correct">
+            <input type="radio" name="letter_position_5" value="correct">
             <label for="letter_correct">Green</label><br>
-            <input type="radio" name="letter_position" value="letter_misplaced">
+            <input type="radio" name="letter_position_5" value="misplaced">
             <label for="letter_misplaced">Yellow</label><br>
-            <input type="radio" name="letter_position" value="letter_missing">
+            <input type="radio" name="letter_position_5" value="missing">
             <label for="letter_missing">Gray</label><br>
           </td>
         </tr>
@@ -108,7 +108,7 @@
 
         </tr>
       </table>
-      <input type="submit" value="Submit">
+      <button type="button" onclick="submitButtonClick()">Submit</button>
       <button type="button" onclick="clear_fields()">Reset</button>
     </div>
 
@@ -126,6 +126,7 @@
     crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="JS/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
